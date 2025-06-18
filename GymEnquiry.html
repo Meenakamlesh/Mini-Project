@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>OM GYM ENQUIRY</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      background: linear-gradient(135deg, #f1c40f, #e67e22);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .form-container {
+      background-color: #fff8ee;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      width: 350px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #2c3e50;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input, select {
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 14px;
+      transition: border 0.3s;
+    }
+
+    input:focus, select:focus {
+      border-color: #e67e22;
+      outline: none;
+    }
+
+    button {
+      padding: 12px;
+      background-color: #e67e22;
+      border: none;
+      color: white;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #d35400;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h1>Om GYM</h1>
+    <form action="https://formsubmit.co/km993016@gmail.com" method="POST">
+      <!-- Auto-response email to user -->
+      <input type="hidden" name="_autoresponse" value="Thank you for registering with Om GYM! We’ll contact you soon. 💪"/>
+
+      <!-- Redirect after success -->
+      <input type="hidden" name="_next" value="https://example.com/thank-you.html" />
+
+      <!-- Form fields -->
+      <input type="text" name="name" placeholder="Enter your Name" required />
+      <input type="number" name="phone" placeholder="Enter your Mobile Number" required />
+      <input type="email" name="email" placeholder="Enter your Email" required />
+      <select name="plan" required>
+        <option value="">Select a Plan</option>
+        <option value="Monthly ₹900">Monthly Plan: ₹900</option>
+        <option value="Half-Yearly ₹1500">Half-Yearly Plan: ₹1500</option>
+        <option value="Annually ₹2000">Annual Plan: ₹2000</option>
+      </select>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
